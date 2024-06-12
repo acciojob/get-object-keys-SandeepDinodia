@@ -3,7 +3,7 @@ let student={
 	name:"sandeep"
 }
 
-Object.prototype.getKeys()= function(){
-	return Object.keys(this);
+function getKeys(obj){
+	return Object.keys(obj);
 }
-console.log(student.getKeys());
+console.log(getKeys(student));
