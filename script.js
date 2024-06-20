@@ -2,8 +2,7 @@
 let student={
 	name:"sandeep"
 }
-
-function getKeys(obj){
-	return Object.keys(obj);
+Object.prototype.getKeys=function(){
+	return Object.keys(this);
 }
-console.log(getKeys(student));
+console.log(student.getKeys());
